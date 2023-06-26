@@ -1,0 +1,10 @@
+version: '2'
+services:
+  main:
+    #image: nvidia/cuda:11.7.0-cudnn8-devel-ubuntu22.04 #pytorch_env:1.1-beta-Rtorch
+    build:
+            context: .
+            dockerfile: ./shiny.Dockerfile
+    ports:
+            - "3838:3838"
+            - "8787:8787"
