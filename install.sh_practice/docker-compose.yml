@@ -1,0 +1,9 @@
+version: '2'
+services:
+  main:
+    build:
+            context: .
+            dockerfile: ./Dockerfile
+    ports:
+            - "3838:3838"
+            - "8787:8787"
